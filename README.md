@@ -1,8 +1,18 @@
+```
+   ____                                       
+  / ___|__ _ _ __ _ __ ___   ___  _ __  _   _ 
+ | |   / _` | '__| '_ ` _ \ / _ \| '_ \| | | |
+ | |__| (_| | |  | | | | | | (_) | | | | |_| |
+  \____\__,_|_|  |_| |_| |_|\___/|_| |_|\__, |
+                                        |___/
+```
+
 # carmony
 A work-in-progress open source version of Mercedes' MBUX Sound Drive
 
 ## Credits
 Music Files/Loops: [ModeAudio on YouTube](https://www.youtube.com/watch?v=8b_Mv0cUEsc)
+
 Music Control: [PyGame](https://github.com/pygame/pygame)
 
 ## How it Works
