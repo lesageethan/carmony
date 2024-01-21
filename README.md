@@ -11,7 +11,8 @@
 A work-in-progress open source version of Mercedes' MBUX Sound Drive
 
 ## Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vxGZE5MImc0?si=0VFSEBzuAVR0KE2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[See a demo of the script in action here](https://www.youtube.com/watch?v=vxGZE5MImc0)
+[See the original Mercedes Sound Drive demonstration here](https://www.youtube.com/shorts/NfBV0JRV3dU)
 
 ## Credits
 Music Files/Loops: [ModeAudio on YouTube](https://www.youtube.com/watch?v=8b_Mv0cUEsc)
