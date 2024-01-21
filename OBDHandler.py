@@ -35,7 +35,7 @@ class OBDHandler():
         rpm_percent = self.rpm/7000
         if rpm_percent<0.1:
             return 0
-        return (rpm_percent-0.1)**0.5
+        return (rpm_percent-0.1)**0.3
     
     def get_bass_volume(self):
         bass_percent = self.accel_pos/100
