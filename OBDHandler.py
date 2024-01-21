@@ -33,7 +33,7 @@ class OBDHandler():
 
     def get_pad_volume(self):
         rpm_percent = self.rpm/7000
-        if rpm_percent<0.15:
+        if rpm_percent<0.08:
             return 0
         return (rpm_percent-0.08)*2
     

@@ -15,12 +15,7 @@ def main():
 
     try:
         while True:
-            time.sleep(0.1)
-            #Get user input for volume adjustments
-            # volume_list = []
-            # for i in range(len(file_paths)):
-            #     volume_input = float(input(f"Enter volume (0.0 to 1.0) for track {file_paths[i]}: "))
-            #     volume_list.append(max(0.0, min(1.0, volume_input)))  # Ensure volume is in the valid range
+            time.sleep(0.05)
             handler.refresh()
             volume_list = handler.get_volumes()
             print(volume_list)
