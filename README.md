@@ -33,15 +33,15 @@ OBD Reading: [Python-OBD](https://python-obd.readthedocs.io/en/latest/)
 ## How it Works
 The aim for this repo is to enable a musical loop to be controlled using inputs from a car's OBD port, similarly to the effect of Mercedes' Sound Drive.
 
-When the program is ran, six looped tracks will begin to run constantly. 
+When the program is ran, any song, broken down into four stems, will play. The four stems are as follows: ```bass.wav```, ```drums.wav```, ```other.wav```, and ```vocals.wav```. These can be generated for any song for free using [Spleeter](https://github.com/deezer/spleeter).
 
 As adjustments are made to the car's current state (RPM, Speed, and Throttle), the volumes of each of the five loops will change. They change in accordance with this graph:
 
 <img src="github-images/volume-curves.png" style="width:500px">
 
-This chart shows volume of instrument on the Y axis, and percentage activation of the measured heuristic (Speed, RPM, or Accelerator Position) on the X axis.
+This chart shows volume of instrument on the Y axis, and percentage activation of the measured heuristic (Speed or RPM) on the X axis. RPM is represented as a number from 0.0-1.0, corresponding to values from 0-7000rpm. Speed is also represented as a number from 0.0-1.0 representing speeds from 0-70mph.
 
-Currently, it only works for one simple 30s synthwave loop, however with enough interest I may revisit this project to add more features. One possible feature would be the ability to add whatever looped sample the user wants. Even more ambitious would be to try and make this project work with any music, automatically separating the tracks from the song, and playing them at separate volumes automatically.
+Currently, the script works for any song split into four stems for any song. A more ambitious version would be to split and play different samples from the song at custom intervals depending on the state of the car.
 
 ## Set Up
 
