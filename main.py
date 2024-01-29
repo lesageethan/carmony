@@ -6,18 +6,23 @@ from OBDHandler import OBDHandler
 import obd
 
 def main():
-    file_paths = os.listdir("wavs/")
-    file_paths = ["wavs/"+file for file in file_paths]
+    songname = input("Please enter the name of the folder containing the song you want to play:")
+    path = "wavs/" + songname +"/"
+    file_paths = os.listdir(path)
+    file_paths = [path+file for file in file_paths if file.lower().endswith(".wav")]
     loop = AudioLoop(file_paths)
     loop.start()
-    loop.adjust_volumes([0,0,0,0,0,0])
+    loop.adjust_volumes([0,0,0,0])
     handler = OBDHandler()
 
     try:
         while True:
-            time.sleep(0.05)
+            time.sleep(0.1)
             handler.refresh()
             volume_list = handler.get_volumes()
+            # volume_list = []
+            # for i in range(0, 4):
+            #     volume_list.append(float(input("Enter volume for track {}:".format(i))))
             print(volume_list)
             loop.adjust_volumes(volume_list)
 
