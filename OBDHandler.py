@@ -43,10 +43,10 @@ class OBDHandler():
     
     def get_volumes(self):
         volumes = [
-            self.get_bass_volume,
-            self.get_drums_volume,
-            self.get_other_volume,
-            self.get_vocals_volume
+            self.get_bass_volume(),
+            self.get_drums_volume(),
+            self.get_other_volume(),
+            self.get_vocals_volume()
         ]
         return volumes
 
